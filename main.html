@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title></title>
+<title>FreeFlow Browser</title>
 <style>
   body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
+    background: white;
   }
   .centered-search {
     height: 100%;
@@ -17,6 +18,11 @@
   }
   form {
     text-align: center;
+  }
+  img.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
   }
   input[type="text"] {
     width: 400px;
@@ -32,6 +38,8 @@
 <body>
   <div class="centered-search">
     <form action="https://duckduckgo.com/" method="GET">
+      <img class="logo" src="freeflow.png" alt="FreeFlow Browser Logo" />
+      <br>
       <input type="text" name="q" placeholder="Search" />
       <input type="submit" value="Search" />
     </form>
